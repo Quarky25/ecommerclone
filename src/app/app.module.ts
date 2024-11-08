@@ -7,13 +7,15 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormSubmitComponent } from './form-submit/form-submit.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     ContactUsComponent,
-    FormSubmitComponent
+    FormSubmitComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
