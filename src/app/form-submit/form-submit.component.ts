@@ -22,14 +22,13 @@ onSubmit(): void {
     console.log('Form is not valid');
   }else {
     
-    let validInput = this.newInput.valid;
-    console.log('Form submitted', this.newInput.value);
-    console.log(validInput);
+    console.log('Form Submitted', this.newInput.value);
+    
   }
-console.log(this.onSubmit);
+
 }
 
 resetForm(): void {
-  this.newInput.reset
+  this.newInput.reset();
 }
 }

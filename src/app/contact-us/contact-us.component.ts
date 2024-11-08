@@ -3,6 +3,7 @@ import { IForm } from '../model/form.model';
 import { FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { FormService } from '../services/form.service';
 
+
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
@@ -24,20 +25,17 @@ constructor(private formService: FormService) {
 }
 
 onSubmit(): void {
-  if(this.input.valid) {
-    let validInput = this.input.valid;
-    console.log('Form submitted', this.input.value);
-    console.log(validInput);
+  if(!this.input.valid) {
     console.log('Form is not valid');
   }else {
     
+    console.log('Form Submitted', this.input.value);
     
   }
-console.log(this.onSubmit);
 
 }
 
 resetForm(): void {
-  this.input.reset
+  this.input.reset();
 }
 }
