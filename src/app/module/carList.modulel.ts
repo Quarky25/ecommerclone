@@ -1,8 +1,12 @@
-import {ICarsList} from '../model/carList.model'; 
+export interface ICarsList{
+    model: string,
+    brand: string,
+    price: number,
+    img: string,
+    desc?: string
+};
 
-
-export class CarService {
-carList: ICarsList[] = 
+export let carList: ICarsList[] =
 [
     {
         model: "Classic",
@@ -36,7 +40,7 @@ carList: ICarsList[] =
         model: "Camry",
         brand: "Toyota",
         price: 15000,
-        img: "./images/img-cars/car-7153508_640.jpg",
+        img: "./images/img-cars/toyota_camry.jpg",
         desc: ""
       },
     {
@@ -57,7 +61,7 @@ carList: ICarsList[] =
         model: "Multipla",
         brand: "Fiat",
         price: 500000,
-        img: "/images/img-cars/multipla.jpg",
+        img: "/images/img-cars/Multipla.jpg",
         desc: ""
       },
     {
@@ -104,7 +108,3 @@ carList: ICarsList[] =
 
     },
   ];
-  getCars(): ICarsList[] {
-    return this.carList;}
-};
-

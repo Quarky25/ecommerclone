@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IForm } from '../model/form.model';
+import { IForm } from '../module/form.model';
 import { FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { FormService } from '../services/form.service';
 
