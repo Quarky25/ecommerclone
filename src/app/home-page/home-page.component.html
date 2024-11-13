@@ -1,1 +1,25 @@
+<app-hero></app-hero>
 
+<div class="container">
+  <div class="d-flex justify-content-center align-items-center">
+    @for (item of randCar; track $index) { @if ($index < 3) {
+    <div>
+      <div class="card m-4" style="width: 15rem">
+        <img src="{{ item.img }}" class="card-img-top" alt="not found" />
+        <div class="card-body">
+          <h5 class="card-title">
+            <strong>{{ item.brand }}</strong> -
+            {{ item.model }}
+          </h5>
+          <p class="card-text">
+            @if (item.desc) {
+            {{ item.desc }}
+            } @else {this car has no description yet}
+          </p>
+        </div>
+      </div>
+    </div>
+    } }
+  </div>
+  <!-- <button class="btn btn-secondary">More</button> -->
+</div>

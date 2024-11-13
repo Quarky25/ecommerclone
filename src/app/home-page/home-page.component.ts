@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { ICarsList, carList } from '../module/carList.modulel';
+import { CarListService } from '../services/car-list.service';
+
+
 
 
 @Component({
@@ -7,5 +11,16 @@ import { Component } from '@angular/core';
   styleUrl: './home-page.component.css'
 })
 export class HomePageComponent {
+  cars: ICarsList[] = carList;
+  
+  randCar: ICarsList[] = [] ;
+
+
+  constructor(private carService: CarListService){
+  
+  this.randCar = this.carService.shuffleArray(this.cars)
+  }
+  
+  
 
 }

@@ -1,0 +1,53 @@
+#heroContainer {
+  width: 100vw;
+  height: 65vh;
+  position: relative;
+}
+
+#heroBg {
+  background-color: #535353;
+  width: 100vw;
+  height: 45vh;
+  position: absolute;
+}
+
+#featImg {
+  position: absolute;
+  z-index: 2;
+  right: 15%;
+}
+
+#heroTxt {
+  position: absolute;
+  z-index: 2;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    color: white;
+    font-size: 60px;
+  }
+  strong {
+    color: blueviolet;
+  }
+}
+
+#featCar {
+  position: absolute;
+  z-index: 2;
+  bottom: 2rem;
+  color: white;
+  font-size: 20px;
+
+  p {
+    margin: 0px;
+  }
+
+  a {
+    color: rgb(160, 160, 160);
+  }
+  a:hover {
+    color: white;
+  }
+}
