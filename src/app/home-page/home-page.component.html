@@ -2,24 +2,36 @@
 
 <div class="container">
   <div class="d-flex justify-content-center align-items-center">
-    @for (item of randCar; track $index) { @if ($index < 3) {
+    @for (item of randCar; track $index) { @if ($index < 6 ) {
     <div>
-      <div class="card m-4" style="width: 15rem">
+      <div class="card m-2" style="width: 11rem">
         <img src="{{ item.img }}" class="card-img-top" alt="not found" />
         <div class="card-body">
           <h5 class="card-title">
-            <strong>{{ item.brand }}</strong> -
+            <strong
+              >{{ item.brand }}
+              <br />
+            </strong>
+            -
             {{ item.model }}
           </h5>
           <p class="card-text">
             @if (item.desc) {
             {{ item.desc }}
-            } @else {this car has no description yet}
+            } @else {this car has <br />
+            no description yet}
           </p>
         </div>
       </div>
     </div>
     } }
   </div>
-  <!-- <button class="btn btn-secondary">More</button> -->
+  <div
+    class="productPageLink d-flex justify-content-center align-items-center p-2"
+  >
+    <p>not what you had in mind? - find all our offers</p>
+    <button class="btn btn-outline-secondary btn-sm ms-2" routerLink="cars">
+      here
+    </button>
+  </div>
 </div>

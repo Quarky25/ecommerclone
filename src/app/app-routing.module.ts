@@ -11,7 +11,6 @@ const routes: Routes = [
   {path: "contact", component: ContactUsComponent},
   {path: "about", component: AboutUsComponent},
   {path: "cars", component: ProductPageComponent}
-  
 
 ];
 

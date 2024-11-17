@@ -1,3 +1,29 @@
 .card-text {
-  height: 80px;
+  height: 65px;
+  color: var(--gray-darker);
+}
+
+.card {
+  border: none;
+  background-color: var(--gray-lighter);
+  box-shadow: 2px 2px 2px 2px var(--gray-darker);
+
+  .card-title {
+    color: var(--rich-black);
+  }
+}
+.card:hover {
+  transform: scale(1.05);
+
+  .card-title {
+    color: var(--skobeloff);
+  }
+}
+
+.productPageLink {
+  font-size: 1.2rem;
+
+  p {
+    margin: 0;
+  }
 }

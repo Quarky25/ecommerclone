@@ -1,5 +1,24 @@
 body,
 html {
-  /* background-color: dodgerblue; */
+  background-color: var(--gray);
+
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+:root {
+  /* colors opt.3 */
+  --rich-black: #071e22ff;
+  --skobeloff: #1d7874ff;
+  --viridian: #679289ff;
+  --peach: #f4c095ff;
+  --red-cmyk: #ee2e31ff;
+
+  /* colors opt.4 */
+  --black: #000000ff;
+  --flame: #cf5c36ff;
+  --lavender-blush: #eee5e9ff;
+  --gray: #afafaf;
+  --gray-darker: #5e5e5e;
+  --gray-lighter: #c9c9c9;
+  --sunset: #efc88bff;
 }

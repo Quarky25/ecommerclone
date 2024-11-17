@@ -1,0 +1,53 @@
+.heading {
+  margin: 4rem 0rem 4rem 0rem;
+  position: absolute;
+  top: 4rem;
+
+  h1 {
+    font-size: 4rem;
+    color: var(--peach);
+  }
+
+  h3 {
+    color: var(--gray-lighter);
+  }
+}
+
+.headBg {
+  background-color: var(--rich-black);
+  height: 250px;
+  position: relative;
+}
+
+.imgBox {
+  position: relative;
+}
+
+.imgCar {
+  width: 300px;
+  box-shadow: 3px 3px 2px 2px var(--gray-darker);
+  transition: all 0.25s;
+}
+.imgCar:hover {
+  transform: scale(1.05);
+}
+.imgTxt {
+  position: absolute;
+  color: rgb(228, 228, 228);
+  font-size: 20px;
+  bottom: 0;
+  left: 75px;
+  background-color: #0e0404cc;
+  width: 250px;
+  padding: 5px 25px;
+  text-align: right;
+}
+
+.priceBanner {
+  position: absolute;
+  color: white;
+  background-color: #ca3f56;
+  top: 15px;
+  left: 0px;
+  padding: 5px;
+}

@@ -9,7 +9,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,17 +23,21 @@ body {
   align-items: center;
 }
 
-.resetBtn {
-  margin-top: 1rem;
-}
-
 .form-container {
-  background-color: #fff;
+  background-color: var(--gray-lighter);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   width: 50%;
+
+  h1 {
+    color: var(--rich-black);
+  }
+  h5 {
+    color: var(--gray-darker);
+    margin-bottom: 2rem;
+  }
 }
 
 .form-group {
@@ -42,9 +46,8 @@ body {
   flex-direction: column;
 }
 
-label {
-  font-size: 1rem;
-  color: #333;
+.form-label {
+  color: var(--gray-darker);
   margin-bottom: 0.5rem;
 }
 
@@ -54,6 +57,9 @@ input {
   border-radius: 4px;
   font-size: 1rem;
   transition: border-color 0.3s;
+}
+.form-control {
+  box-shadow: inset 0px 0px 20px 3px var(--rich-black);
 }
 
 input:focus {

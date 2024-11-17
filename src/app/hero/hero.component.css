@@ -1,13 +1,13 @@
 #heroContainer {
   width: 100vw;
-  height: 65vh;
+  height: 60vh;
   position: relative;
 }
 
 #heroBg {
-  background-color: #535353;
+  background-color: var(--rich-black);
   width: 100vw;
-  height: 45vh;
+  height: 48vh;
   position: absolute;
 }
 
@@ -25,19 +25,19 @@
   align-items: center;
 
   h1 {
-    color: white;
+    color: var(--lavender-blush);
     font-size: 60px;
   }
   strong {
-    color: blueviolet;
+    color: var(--red-cmyk);
   }
 }
 
 #featCar {
   position: absolute;
   z-index: 2;
-  bottom: 2rem;
-  color: white;
+  bottom: 1.5rem;
+  color: var(--lavender-blush);
   font-size: 20px;
 
   p {
@@ -45,9 +45,9 @@
   }
 
   a {
-    color: rgb(160, 160, 160);
+    color: var(--gray);
   }
   a:hover {
-    color: white;
+    color: var(--lavender-blush);
   }
 }
