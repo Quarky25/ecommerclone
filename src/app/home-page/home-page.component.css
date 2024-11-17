@@ -22,6 +22,7 @@
 
 .productPageLink {
   font-size: 1.2rem;
+  color: var(--rich-black);
 
   p {
     margin: 0;
