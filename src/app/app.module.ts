@@ -14,6 +14,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { HeroComponent } from './hero/hero.component';
+import { FooterComponent } from './footer/footer.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { HeroComponent } from './hero/hero.component';
     NavbarComponent,
     AboutUsComponent,
     ProductPageComponent,
-    HeroComponent
+    HeroComponent,
+    FooterComponent,
+    CartComponent
 
   ],
   imports: [
