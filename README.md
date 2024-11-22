@@ -1,3 +1,19 @@
+Teamproject - Angular
+Quarky:
+github repository creation
+
+Donarsdottir:
+
+Nekyo:
+home page component,
+products page component,
+color palettes
+some adjustments for nav and contact page,
+images,
+product array
+
+
+
 # Ecommerclone
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
