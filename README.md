@@ -1,8 +1,14 @@
 Teamproject - Angular
 Quarky:
 github repository creation
+search function
+detail component
+contact us
 
-Donarsdottir:
+Donarsdottir: 
+footer
+about us
+shopping cart
 
 Nekyo:
 home page component,
@@ -12,8 +18,8 @@ some adjustments for nav and contact page,
 images,
 product array
 
-
-
+Rights reserved to: Donarsdottir, Nekyo, Quarky, 
+For commercial use please contact us
 # Ecommerclone
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
