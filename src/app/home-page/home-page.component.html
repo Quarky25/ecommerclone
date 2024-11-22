@@ -4,7 +4,11 @@
   <div class="d-flex justify-content-center align-items-center">
     @for (item of randCar; track $index) { @if ($index < 6 ) {
     <div>
-      <div class="card m-2" style="width: 11rem">
+      <div
+        class="card m-2"
+        style="width: 11rem"
+        routerLink="/details/{{ $index }}"
+      >
         <img src="{{ item.img }}" class="card-img-top" alt="not found" />
         <div class="card-body">
           <h5 class="card-title">
