@@ -4,6 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { CarDetailsComponent } from './car-details/car-details.component';
 
 
 
@@ -12,7 +13,7 @@ const routes: Routes = [
   {path: "contact", component: ContactUsComponent},
   {path: "about", component: AboutUsComponent},
   {path: "cars", component: ProductPageComponent},
-  
+  {path: "details/:id", component: CarDetailsComponent}
 
 ];
 

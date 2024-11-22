@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FilteredListService } from '../services/filtered-list.service';
+import { CarListService } from '../services/car-list.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,12 +11,12 @@ import { FilteredListService } from '../services/filtered-list.service';
 export class NavbarComponent {
 searchTerm = '';
 
-constructor(private router: Router, private searchService: FilteredListService) {
+constructor(private router: Router, private carService: CarListService) {
 
 }
 
 onSearch() {
-  this.searchService.updateSearchTerm(this.searchTerm);
+  this.carService.updateSearchTerm(this.searchTerm);
   
 }
 }

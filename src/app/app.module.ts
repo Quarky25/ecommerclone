@@ -14,6 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { HeroComponent } from './hero/hero.component';
+import { CarDetailsComponent } from './car-details/car-details.component';
 
 
 
@@ -27,6 +28,7 @@ import { HeroComponent } from './hero/hero.component';
     AboutUsComponent,
     ProductPageComponent,
     HeroComponent,
+    CarDetailsComponent,
    
 
   ],

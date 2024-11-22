@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
-import { ICarsList } from '../module/carList.modulel';
+
+import { BehaviorSubject, Observable } from 'rxjs';
+import { carList, ICarsList } from '../module/carList.modulel';
 import { CarListService } from './car-list.service';
-import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FilteredListService {
-private searchTermSubject = new BehaviorSubject<string>('');
-searchTerm$ = this.searchTermSubject.asObservable();
+carList: ICarsList[] = carList
 
-updateSearchTerm(term: string) {
-  this.searchTermSubject.next(term);
-}
+
+
+
+
 }

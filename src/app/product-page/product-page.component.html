@@ -5,9 +5,9 @@
     <h3>your future Car awaits!</h3>
   </div>
   <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mt-5">
-    @for (val of cars$ | async; track val){
+    @for (val of cars$ | async; track $index){
 
-    <div class="imgBox mb-3 mt-3">
+    <div class="imgBox mb-3 mt-3" routerLink="/details/{{ $index }}">
       <div>
         <p class="imgTxt">
           <strong>{{ val.brand }}</strong> - {{ val.model }}

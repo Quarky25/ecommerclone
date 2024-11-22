@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { ICarsList, carList } from '../module/carList.modulel';
 import { CarListService } from '../services/car-list.service';
-import { Observable } from 'rxjs';
+import { Observable, switchMap } from 'rxjs';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 
 @Component({
@@ -11,8 +12,19 @@ import { Observable } from 'rxjs';
 })
 export class ProductPageComponent {
 cars: ICarsList[] = carList;
+car: ICarsList = {} as ICarsList
 cars$: Observable<ICarsList[]>
-constructor(private carService: CarListService){
+index: number = 0;
+
+constructor(private carService: CarListService, private router: ActivatedRoute){
 this.cars$ = this.carService.getCars();
+this.router.params.subscribe(params => {
+  const id = params['id']
+  if(id !== null) {
+    this.car = this.cars[this.index]
+  }
+})
+
 }
+
 }
