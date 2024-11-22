@@ -7,6 +7,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { CartComponent } from './cart/cart.component';
 
 
+
 const routes: Routes = [
   {path: "", component: HomePageComponent},
   {path: "contact", component: ContactUsComponent},

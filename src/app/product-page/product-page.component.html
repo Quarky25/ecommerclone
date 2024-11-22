@@ -5,7 +5,7 @@
     <h3>your future Car awaits!</h3>
   </div>
   <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mt-5">
-    @for (val of cars; track val){
+    @for (val of cars$ | async; track val){
 
     <div class="imgBox mb-3 mt-3">
       <div>

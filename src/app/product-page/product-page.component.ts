@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ICarsList, carList } from '../module/carList.modulel';
+import { CarListService } from '../services/car-list.service';
+import { Observable } from 'rxjs';
 
 
 @Component({
@@ -9,8 +11,8 @@ import { ICarsList, carList } from '../module/carList.modulel';
 })
 export class ProductPageComponent {
 cars: ICarsList[] = carList;
-
-constructor(){
-
+cars$: Observable<ICarsList[]>
+constructor(private carService: CarListService){
+this.cars$ = this.carService.getCars();
 }
 }
