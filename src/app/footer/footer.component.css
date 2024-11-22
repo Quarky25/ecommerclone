@@ -1,9 +1,9 @@
-.nav-link {
+#link {
   transition: all 0.3s ease;
   text-decoration: none;
   color: white;
 }
 
-.nav-link:hover {
+#link:hover {
   color: var(--red-cmyk);
 }
