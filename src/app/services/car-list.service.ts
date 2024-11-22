@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {ICarsList, carList} from '../module/carList.modulel'; 
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,9 +10,10 @@ export class CarListService {
   carList: ICarsList[] = carList;
 
   constructor() { }
-
-  getCars(): ICarsList[] {
-    return this.carList;}
+private carsSubject = new BehaviorSubject<ICarsList[]>(this.carList);
+  getCars(): Observable<ICarsList[]> {
+    return this.carsSubject.asObservable();
+  }
 
 
 shuffleArray(array:{}[]):any {

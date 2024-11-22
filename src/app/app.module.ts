@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -14,6 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { HeroComponent } from './hero/hero.component';
+
 
 
 @NgModule({
@@ -25,13 +26,15 @@ import { HeroComponent } from './hero/hero.component';
     NavbarComponent,
     AboutUsComponent,
     ProductPageComponent,
-    HeroComponent
+    HeroComponent,
+   
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
